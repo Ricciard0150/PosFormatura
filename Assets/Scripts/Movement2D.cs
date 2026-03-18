@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Movement2D : MonoBehaviour
+public class Movement2D : MonoBehaviour, IStatusPlayer
 {
     [SerializeField] float speed = 5;
     Vector2 _movement;
