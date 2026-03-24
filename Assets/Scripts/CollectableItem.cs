@@ -6,7 +6,8 @@ public class CollectableItem : MonoBehaviour
     public Transform maoPlayer;
     bool playerPerto = false;
     bool sendoSegurado = false;
-    
+
+    int contador = 0;
 
     void Update()
     {
@@ -20,7 +21,13 @@ public class CollectableItem : MonoBehaviour
             Dropar();
         }
     }
-
+    public void LoadAnotherPart()
+    {
+        if (contador >= 4)
+        {
+            Debug.Log("gaga");
+        }
+    }
     void Pegar()
     {
         Debug.Log("lalala");
@@ -39,6 +46,7 @@ public class CollectableItem : MonoBehaviour
         Debug.Log("gaga");
         transform.SetParent(carId);
         transform.position = carId.position;
+        contador++;
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
