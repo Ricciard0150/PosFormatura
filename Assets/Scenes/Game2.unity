@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpwaner
   obstaclePrefab: {fileID: 6386058272293459847, guid: 9bb6dde1400bedf4a97610bcb573ec13, type: 3}
-  tempoSpawn: 2
+  tempoSpawn: 1.5
   limiteX: 2.5
 --- !u!4 &109522483
 Transform:
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Voc\xEA venceu os obst\xE1culos e passou no teste!!!!"
+  m_text: PARABEEEEEENS !!! VOCE PASSOU !!!!!!!!!!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -496,7 +496,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tente novamente!
+  m_text: vai denovoooo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -921,7 +921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FinishSpawner
   finishPrefab: {fileID: 2262902694884898134, guid: ddd427935ed8cb9448d6624687732e75, type: 3}
-  tempoParaSpawn: 10
+  tempoParaSpawn: 60
 --- !u!4 &608880170
 Transform:
   m_ObjectHideFlags: 0
@@ -1802,7 +1802,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Voltar ao menu
+  m_text: volta pro meuu!!!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2005,7 +2005,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 113, y: 34}
+  m_AnchoredPosition: {x: 46, y: 57}
   m_SizeDelta: {x: 70.92, y: 131.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1867878137
@@ -2028,7 +2028,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Voc\xEA perdeu! Mais aten\xE7\xE3o no tr\xE2nsito!"
+  m_text: MANOOOOOOOO!! VOCE BATEU O CARROOO....... CUIDADO!!!!!!!!!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2093,7 +2093,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -222.10179, y: 0, z: -40.699173, w: 0}
+  m_margin: {x: -222.10179, y: 0, z: -178.74776, w: -92.03241}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
