@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Car
+  - Obstacle
+  - Finish1
   layers:
   - Default
   - TransparentFX
@@ -39,8 +41,17 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: cu
+    uniqueID: 3811805231
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: 1
+    uniqueID: 1861462833
+    locked: 0
+  - name: canva
+    uniqueID: 3452010743
     locked: 0
   m_RenderingLayers:
   - Default

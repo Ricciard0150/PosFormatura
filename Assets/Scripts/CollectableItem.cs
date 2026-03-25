@@ -1,14 +1,15 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CollectableItem : MonoBehaviour
 {
     public Transform carId;
     public Transform maoPlayer;
+
     bool playerPerto = false;
     bool sendoSegurado = false;
+    bool jaEntregue = false;
 
-    int contador = 0;
-
+    public static int contador = 0; 
     void Update()
     {
         if (playerPerto && Input.GetKeyDown(KeyCode.E) && !sendoSegurado)
@@ -21,16 +22,10 @@ public class CollectableItem : MonoBehaviour
             Dropar();
         }
     }
-    public void LoadAnotherPart()
-    {
-        if (contador >= 4)
-        {
-            Debug.Log("gaga");
-        }
-    }
+
     void Pegar()
     {
-        Debug.Log("lalala");
+        Debug.Log("grab");
         sendoSegurado = true;
         transform.SetParent(maoPlayer);
         transform.localPosition = Vector3.zero;
@@ -41,21 +36,29 @@ public class CollectableItem : MonoBehaviour
         sendoSegurado = false;
         transform.SetParent(null);
     }
+
     void OnMoveCar()
     {
-        Debug.Log("gaga");
+        if (jaEntregue) return; 
+
+        Debug.Log("entregou no carro");
         transform.SetParent(carId);
         transform.position = carId.position;
-        contador++;
+
+        contador++; 
+        jaEntregue = true;
+
+        gameObject.SetActive(false); 
     }
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent(out IStatusPlayer status))
         {
             playerPerto = true;
-            
         }
-        if(collision.CompareTag("Car"))
+
+        if (collision.CompareTag("Car"))
         {
             OnMoveCar();
         }
